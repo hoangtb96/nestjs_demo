@@ -1,5 +1,5 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { Location } from '../../entities/location.entity';
+import { Location } from '../../../../entities/location.entity';
 import { LocationService } from '../../location.service';
 import { GetLocationQuery } from '../get-location.query';
 

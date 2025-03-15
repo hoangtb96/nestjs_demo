@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { CqrsModule } from '@nestjs/cqrs';
 import { LocationController } from './location.controller';
-import { Location } from './entities/location.entity';
-import { Building } from './entities/building.entity';
+import { Location } from '../../entities/location.entity';
+import { Building } from '../../entities/building.entity';
 import { LocationService } from './location.service';
 
 // Command Handlers

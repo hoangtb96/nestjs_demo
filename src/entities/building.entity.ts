@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 import { Location } from './location.entity';
-import { BaseEntity } from '../../common/entities/base.entity';
+import { BaseEntity } from '../common/entities/base.entity';
 
 @Entity('buildings')
 export class Building extends BaseEntity {

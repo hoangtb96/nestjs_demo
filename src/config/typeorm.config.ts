@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { Location } from '../location/entities/location.entity';
-import { Building } from '../location/entities/building.entity';
+import { Location } from '../entities/location.entity';
+import { Building } from '../entities/building.entity';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { BaseEntity } from '../common/entities/base.entity';
 

@@ -7,11 +7,13 @@ import { DeleteLocationCommand } from './commands/delete-location.command';
 import { GetLocationQuery } from './queries/get-location.query';
 import { GetLocationsQuery } from './queries/get-locations.query';
 import { GetLocationTreeQuery } from './queries/get-location-tree.query';
-import { Location } from './entities/location.entity';
+import { Location } from '../../entities/location.entity';
 import { CreateLocationDto } from './dto/create-location.dto';
 import { UpdateLocationDto } from './dto/update-location.dto';
 import { LocationService } from './location.service';
-import { LocationNotFoundException } from '../common/exceptions/location-not-found.exception';
+import { BuildingNotFoundException } from '../../common/exceptions/building-not-found.exception';
+import { LocationNotFoundException } from '../../common/exceptions/location-not-found.exception';
+import { DuplicateNameException } from '../../common/exceptions/duplicate-name.exception';
 
 @ApiTags('locations')
 @Controller('locations')
